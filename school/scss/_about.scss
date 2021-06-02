@@ -1,0 +1,113 @@
+.about{
+    background-image: url(/img/bgintro.jpg),;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    position: relative;
+    &_inner{
+        max-width: 1080px;
+    }
+    &_title{
+        color: #fff;
+        padding-bottom: 50px;
+    }
+    &_name{
+        color: #fff;
+        font-size: 36px;
+        padding-bottom: 18px;
+        max-width: fit-content;
+        &:after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #F26955;
+
+        }
+    }
+    &_item{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid#F26955;
+        padding-bottom: 67px;
+        margin-top: 37px;
+        &:last-child{
+            border-bottom: 3px solid transparent;
+        }
+
+    }
+    &_image{
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        flex: 0 0 auto;
+    }
+    &_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &_text{
+        color: #fff;
+        max-width: 624px;
+        margin-bottom: 17px;
+        font-size: 24px;
+    }
+    &_icon{
+        max-width: 48px;
+    }
+    &_desc{
+        margin-left: 15px;
+    }
+    &_links{
+        margin-left: 39px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}
+.gradfon{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+@media(max-width:890px){
+    .about_item{
+        flex-direction: column;
+    }
+    .about_image{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .about_desc{
+        margin: 0 auto;
+    }
+    .about_name{
+        text-align: center;
+        font-size: 18px;
+    }
+    .about_title{
+        font-size: 36px;
+        padding-bottom: 18px;
+    }
+    .about_text{
+        font-size: 18px;
+    }
+    .about_icon{
+        max-width: 30px;
+    }
+    .about{
+        padding-bottom: 15px;
+    }
+}

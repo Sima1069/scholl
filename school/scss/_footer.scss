@@ -1,0 +1,119 @@
+.footer{
+    background: #404040;
+    padding-top: 100px;
+    &_block{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_discription{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #000;
+        overflow: hidden;
+        margin-bottom: 50px;
+        
+    }
+    &_img{
+        width: 250px;
+        height: 250px;
+    }
+    &_mail{
+        font-size: 30px;
+        color: #fff;
+        margin-right: 50px;
+    }
+    &_email{
+        margin-bottom: 20px;
+    }
+    &_gmail{
+        color: #fff;
+    }
+    &_phone{
+        font-size: 30px;
+        color: #fff;
+        
+    }
+    &_tell{
+        margin-bottom: 20px;
+    }
+    &_telephone{
+        color: #fff;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &_inner{
+        max-width: 1500px;
+    }
+    &_content{
+        background: #161D28;
+    }
+    &_text{
+        text-align: center;
+        font-size: 25px;
+    }
+    &_content{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media(max-width:1105px){
+    .footer_discription{
+        flex-direction: column;
+    }
+    .footer_gmail{
+        margin-bottom: 20px;
+    }
+    .footer_inner{
+        max-width: 95%;
+    }
+    .footer_phone{
+       transform: translateY(-100px);
+    }
+}
+@media(max-width:843px){
+    .footer_block{
+        flex-direction: column;
+    }
+    .footer_phone{
+        transform: translateY(5px);
+        font-size: 24px;
+    }
+    .footer_image{
+        margin-top: 50px;
+    }
+    .footer_mail{
+        font-size: 24px;
+    }
+    .footer_telephone{
+        font-size: 18px;
+    }
+    .footer_gmail{
+        font-size: 18px;
+    }
+    .footer_image{
+        width: 170px;
+        height: 170px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer_img{
+        width: 150px;
+        height: 150px;
+    }
+    .footer_text{
+        font-size: 24px;
+    }
+    .footer{
+        padding-top: 20px;
+    }
+}

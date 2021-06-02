@@ -1,0 +1,40 @@
+.intro{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#man{
+    animation: man 5s infinite linear;
+}
+@keyframes man{
+    0%{
+
+    }
+    50%{
+        transform: translatey(-50px); 
+    }
+    100%{
+
+    }
+}
+@media(max-width:819px){
+    .animationsvg{
+        width: 520px;
+        height: auto;
+    }
+}
+@media(max-width:587px){
+    .animationsvg{
+        width: 400px;
+    }
+}
+@media(max-width:453px){
+    .animationsvg{
+        width: 300px;
+    }
+}
+@media(max-width:335px){
+    .animationsvg{
+        width: 250px;
+    }
+}
